@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #12211c;
+  color: #f4efe3;
+}
+
+::selection {
+  background-color: #c7962e;
+  color: #12211c;
+}
+
+/* Ledger hairline divider, reused across sections */
+.ledger-rule {
+  border-top: 1px solid rgba(244, 239, 227, 0.14);
+}
+
+/* Numbered "case file" / "entry" label styling */
+.entry-number {
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.08em;
+}
+
+/* Marquee ticker pauses on hover/focus for readability */
+.ticker-track:hover,
+.ticker-track:focus-within {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  * {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
