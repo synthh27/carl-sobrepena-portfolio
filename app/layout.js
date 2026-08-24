@@ -1,11 +1,11 @@
-import { Fraunces, Inter, IBM_Plex_Mono } from "next/font/google";
+import { Montserrat, Fraunces, Inter, Nunito ,IBM_Plex_Mono } from "next/font/google";
 import "./globals.css";
 
 // Display serif — used sparingly for headlines and the entry numerals
-const fraunces = Fraunces({
+const montserrat = Montserrat({
   subsets: ["latin"],
-  variable: "--font-fraunces",
-  weight: ["400", "500", "600"],
+  variable: "--font-montserrat",
+  weight: ["400", "500", "600", "800"],
   style: ["normal", "italic"],
   display: "swap",
 });
@@ -19,10 +19,11 @@ const inter = Inter({
 });
 
 // Utility / ledger labels, KPI figures, nav eyebrows
-const plexMono = IBM_Plex_Mono({
+
+const nunito = Nunito({
   subsets: ["latin"],
-  variable: "--font-plex-mono",
-  weight: ["400", "500"],
+  variable: "--font-nunito",
+  weight: ["400", "500", "600"],
   display: "swap",
 });
 
@@ -48,8 +49,8 @@ export const metadata = {
     "service business marketing",
     "growth marketing",
   ],
-  authors: [{ name: "Your Name" }],
-  creator: "Your Name",
+  authors: [{ name: "Carl Sobrepeña" }],
+  creator: "Carl Sobrepeña",
   robots: {
     index: true,
     follow: true,
@@ -88,7 +89,7 @@ export const viewport = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${fraunces.variable} ${inter.variable} ${plexMono.variable}`}>
+    <html lang="en" className={`${montserrat.variable} ${inter.variable} ${nunito.variable}`}>
       <body className="font-body bg-ink text-paper antialiased">{children}</body>
     </html>
   );
