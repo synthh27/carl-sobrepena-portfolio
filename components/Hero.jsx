@@ -4,12 +4,13 @@ import { useEffect } from "react";
 import Cal, { getCalApi } from "@calcom/embed-react";
 
 // Placeholder KPI "ledger" entries — swap in your real numbers later.
+
 const LEDGER_ENTRIES = [
-  { label: "Avg. new bookings / mo", value: "42+" },
-  { label: "Client retention", value: "94%" },
-  { label: "Avg. return on ad spend", value: "4.8×" },
-  { label: "Avg. reply time", value: "< 2 hrs" },
-  { label: "Active client accounts", value: "11" },
+  { label: "Attract The Right Audience" }, 
+  { label: "Grow Your Following" },
+  { label: "Maximize Ad Performance" },
+  { label: "Respond Quickly" },
+  { label: "Manage Client Relationships" }
 ];
 
 export default function Hero() {
@@ -33,57 +34,39 @@ export default function Hero() {
       id="hero"
       className="relative overflow-hidden border-b border-line bg-ink pt-28 pb-0 sm:pt-32"
     >
-      <div className="mx-auto grid max-w-6xl gap-14 px-6 lg:grid-cols-[1.05fr_0.95fr] lg:gap-10 lg:px-8">
+      <div className="mx-auto grid max-w-6xl gap-14 px-6 text-center">
         {/* Left: headline + copy */}
         <div className="flex flex-col justify-center">
-          <p className="font-mono text-xs uppercase tracking-[0.25em] text-brass">
-            Reservation No. 001 — Strategy Call
+          <p className="font-mono font-bold text-xs uppercase tracking-[0.25em] text-brass-soft border-brass-soft border py-3 px-8 rounded-full w-max mx-auto ">
+            STAGNANT GROWTH AND REVENUE? LET'S FIX THAT.
           </p>
 
-          <h1 className="mt-6 font-display text-4xl leading-[1.08] text-paper sm:text-5xl lg:text-6xl">
-            Full-stack growth,
+          <h1 className="mt-6 font-display font-bold text-4xl leading-[1.08] text-paper sm:text-5xl lg:text-6xl">
+            WE STRATEGIZE <span className="text-brass">PREDICTABLE</span> 
             <br />
-            run like a tight kitchen.
+            <span className="text-brass">GROWTH,</span> NOT JUST TRAFFIC.
           </h1>
 
-          <p className="mt-6 max-w-md text-base leading-relaxed text-paper-dim sm:text-lg">
-            I build acquisition systems for high-value service and F&amp;B
-            businesses — the strategy, the campaigns, and the follow-up
-            plumbing that turns interest into booked revenue. One operator,
-            full stack, no hand-offs.
+          <p className="mt-6 mx-14 text-base leading-relaxed text-paper-dim sm:text-lg">
+            We help entrepreneurs and business owners grow revenue predictably. Diagnose your scaling bottlenecks, then implement the right <span className="text-brass">strategy, campaigns, and systems</span> to fix them. 
+            {/* We help entrepreneurs and business owners grow revenue predictably with full-stack digital marketing — strategy, campaigns, and systems built to scale.  */}
           </p>
 
-          <div className="mt-9 flex flex-wrap items-center gap-4">
+          <div className="mt-9 flex flex-wrap items-center justify-center gap-8">
             <a
-              href="#contact"
+              href="https://cal.com/carl-sobrepena-3fexby/15min"
+              target="_blank"
+              rel="noopener noreferrer"
               className="rounded-sm bg-brass px-6 py-3 font-mono text-xs uppercase tracking-[0.15em] text-ink transition-colors hover:bg-brass-soft"
             >
-              Start a project
+              Book a Clarity Call
             </a>
             <a
               href="#projects"
-              className="font-mono text-xs uppercase tracking-[0.15em] text-paper-dim transition-colors hover:text-paper"
+              className="font-mono rounded-sm text-xs uppercase tracking-[0.15em] border-2 border-brass-soft px-6 py-3 text-paper-dim transition-colors hover:text-paper hover:border-brass"
             >
-              See the case files →
+              Check How We Work →
             </a>
-          </div>
-        </div>
-
-        {/* Right: Cal.com booking widget, framed like a reservation card */}
-        <div className="flex items-center">
-          <div className="w-full rounded-sm border border-line bg-ink-soft p-1.5 shadow-2xl shadow-black/30">
-            <div className="flex items-center justify-between border-b border-line px-4 py-3">
-              <span className="font-mono text-[11px] uppercase tracking-[0.2em] text-paper-dim">
-                Book a Strategy Call
-              </span>
-              <span className="font-mono text-[11px] text-brass">30 min</span>
-            </div>
-            <Cal
-              namespace="strategy-call"
-              calLink="your-username/strategy-call"
-              style={{ width: "100%", height: "480px", overflow: "scroll" }}
-              config={{ layout: "month_view" }}
-            />
           </div>
         </div>
       </div>
@@ -96,12 +79,7 @@ export default function Hero() {
               key={`${entry.label}-${i}`}
               className="flex items-center gap-3 whitespace-nowrap font-mono text-xs uppercase tracking-[0.12em] text-paper-dim"
             >
-              <span className="entry-number text-brass">
-                {String((i % LEDGER_ENTRIES.length) + 1).padStart(2, "0")}
-              </span>
               <span>{entry.label}</span>
-              <span className="text-paper">{entry.value}</span>
-              <span className="mx-2 text-line">/</span>
             </div>
           ))}
         </div>
