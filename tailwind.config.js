@@ -11,15 +11,15 @@ module.exports = {
         "ink-soft": "#E5E5E5",
         paper: "#14213D",
         "paper-dim": "rgba(20, 33, 61, 0.6)",
-        brass: "#A15C00",
-        "brass-soft": "#FCA311",
+        brass: "#008080",
+        "brass-soft": "#03acac",
         wine: "#000000",
         line: "rgba(20, 33, 61, 0.14)",
       },
       fontFamily: {
-        display: ["var(--font-fraunces)", "serif"],
+        display: ["var(--font-montserrat)", "serif"],
         body: ["var(--font-inter)", "sans-serif"],
-        mono: ["var(--font-plex-mono)", "monospace"],
+        mono: ["var(--font-nunito)", "monospace"],
       },
       keyframes: {
         marquee: {
