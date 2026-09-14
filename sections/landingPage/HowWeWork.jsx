@@ -116,7 +116,7 @@ const HowWeWork = () => {
       phase: 'Goals & Challenges Discovery',
       title: 'Discover',
       description:
-        'We start by understanding your business model, revenue goals, and customer acquisition pain points. We audit your current systems, customer journey, and marketing infrastructure—then identify which channels and strategies will actually move the needle for your specific business.',
+        'You don\'t know which channels and strategies actually work for your business. We audit your systems, customer journey, and revenue model to identify your highest-leverage opportunities.',
       tags: ['Customer Journey Audit', 'Systems Audit', 'Competitor Analysis', 'Funnel Gap Analysis', 'Revenue Model Review']
     },
     {
@@ -124,7 +124,7 @@ const HowWeWork = () => {
       phase: 'Marketing Strategy & Positioning',
       title: 'Strategize',
       description:
-        'Based on what we discovered, we design your complete marketing engine. This means mapping your funnel, positioning your offer, identifying your highest-leverage channels, and outlining the customer journey from awareness through repeat purchase. Strategy done right saves thousands in wasted spend.',
+        'Without a clear strategy, you\'re spending money without direction. We map your funnel, position your offer, and outline your complete customer lifecycle so you know exactly where to focus.',
       tags: ['Funnel Design', 'Brand Positioning', 'Messaging Architecture', 'Channel Strategy', 'Customer Lifecycle Mapping']
     },
     {
@@ -132,7 +132,7 @@ const HowWeWork = () => {
       phase: 'Campaign Execution & Build',
       title: 'Build',
       description:
-        'We bring your strategy to life. From landing pages and email sequences to ad campaigns and automation workflows, we handle design, copywriting, integration, and deployment. Everything is built to convert—not just to look good.',
+        'Strategy without execution doesn\'t drive sales. We build landing pages, email sequences, ads, and automation workflows designed to convert—not just look good.',
       tags: ['Landing Page Design', 'Email Funnel Setup', 'Ad Campaign Creation', 'Chat Automation', 'CRM Configuration', 'Marketing Automation']
     },
     {
@@ -140,7 +140,7 @@ const HowWeWork = () => {
       phase: 'Launch, Measure & Optimize',
       title: 'Optimize',
       description:
-        'Launch isn\'t the end—it\'s the beginning. We track performance metrics, run tests on copy and offers, optimize conversion rates, and scale what works. Your marketing system gets smarter and more profitable with every cycle.',
+        'You launch and hope, but don\'t know what\'s actually working. We track metrics, run tests, and scale what converts so your system gets smarter with every cycle.',
       tags: ['Performance Analytics', 'A/B Testing', 'CRO (Conversion Rate Optimization)', 'Campaign Scaling', 'Attribution & Tracking', 'Growth Optimization']
     }
   ];
