@@ -82,7 +82,7 @@ const Services = () => {
           {description}
         </p>
         <a
-          href="#projects"
+          href="/projects"
           className="w-full mt-auto text-center font-mono font-semibold rounded-sm text-xs md:text-md uppercase tracking-[0.15em] bg-transparent border-paper-dimmer/30 px-2 py-2 text-paper-dim/60 transition-colors  hover:border-paper-dimmer/50 hover:text-paper-dim/70 hover:bg-paper-dim/5 hover:shadow-sm border"
         >
           Sample Projects →

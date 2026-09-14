@@ -38,9 +38,10 @@ export default function Navbar() {
           <div className="flex-shrink-0">
             <button
               onClick={() => handleNavClick('/')}
-              className="text-2xl font-semibold text-paper-dim hover:text-brass-soft transition-colors"
+              className="text-2xl font-bold uppercase text-brass-soft hover:text-brass transition-colors"
+
             >
-              Logo
+              Carl
             </button>
           </div>
 
@@ -55,7 +56,7 @@ export default function Navbar() {
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-brass-soft group-hover:w-full transition-all duration-300"></span>
             </button>
             <button
-              onClick={() => handleNavClick('/services')}
+              onClick={() => handleNavClick('/#services')}
               className="text-sm text-paper-dim font-medium hover:text-brass-soft transition-colors relative group"
             >
               Services
@@ -99,7 +100,7 @@ export default function Navbar() {
 
             {/* Another Nav Link */}
             <button
-              onClick={() => handleNavClick('/work')}
+              onClick={() => handleNavClick('/#how-we-work')}
               className="text-sm text-paper-dim font-medium hover:text-brass-soft transition-colors relative group"
             >
               How We Work
@@ -108,7 +109,7 @@ export default function Navbar() {
 
             {/* CTA Button */}
             <button
-              onClick={() => handleNavClick('/contact')}
+              onClick={() => handleNavClick('https://cal.com/carl-sobrepena-3fexby/15min')}
               className="ml-4 px-6 py-2 bg-brass-soft text-white text-sm font-medium rounded-sm hover:bg-brass transition-all duration-200 active:scale-95"
             >
               Book your schedule

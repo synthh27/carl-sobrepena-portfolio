@@ -37,10 +37,6 @@ export default function Hero() {
       return () => observer.disconnect()
     }, [])
   return (
-    // <section
-    //   id="hero"
-    //   className="relative overflow-hidden border-b border-b-brass-soft bg-paper px-8 py-24 sm:px-16"
-    // >
     <section
       ref={sectionRef}
       id="hero"
@@ -69,7 +65,7 @@ export default function Hero() {
             Book a Clarity Call
           </a>
           <a
-            href="#projects"
+            href="#services"
             className="w-full sm:w-fit font-mono font-semibold rounded-md text-xs md:text-md uppercase tracking-[0.15em] bg-transparent border-brass px-8 py-3 text-brass transition-colors hover:text-brass-soft hover:border-brass-soft hover:shadow-xl border-2"
           >
             Check Our Works →

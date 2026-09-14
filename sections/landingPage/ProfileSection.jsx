@@ -50,7 +50,7 @@ const ProfileSection = () => {
                   <span className='block text-[0.6rem] lg:text-[.65rem] text-ink-dim font-thin'>100% free 15 min call.  Zero Commitment.</span>
                 </a>
                 <a
-                  href="#projects"
+                  href="#how-we-work"
                   className="w-full font-display font-semibold rounded-md text-xs  uppercase tracking-wide border-brass px-8 py-3 text-ink transition-colors hover:text-ink/80 hover:border-brass/90 hover:shadow-xl border"
                 >
                   Check our work process →
@@ -64,7 +64,7 @@ const ProfileSection = () => {
                   </h2>
                   <div className="w-fit flex items-center justify-center gap-12">
                     <a
-                      href="https://linkedin.com/in/your-profile"
+                      href="https://linkedin.com/in/carl-sobrepena"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-ink-dim hover:text-brass-soft transition-colors duration-300"
@@ -82,7 +82,7 @@ const ProfileSection = () => {
                       <FaInstagram size={32} />
                     </a>
                     <a
-                      href="https://facebook.com/your-profile"
+                      href="https://www.facebook.com/carl.sobrepena.wcd"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-ink-dim hover:text-brass-soft transition-colors duration-300"

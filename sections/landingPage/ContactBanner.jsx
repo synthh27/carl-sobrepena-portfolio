@@ -41,7 +41,7 @@ const ContactBanner = () => {
         
         <section
             ref={sectionRef}
-            id="problem-banner"
+            id="contact-banner"
             className={`relative w-full overflow-hidden px-8 py-16 lg:py-28 sm:px-8 border-b border-t border-line bg-brass-soft transition-all duration-1000 ease-out ${
                 isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'
             }`}

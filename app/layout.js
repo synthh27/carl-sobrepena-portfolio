@@ -90,8 +90,8 @@ export const viewport = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${montserrat.variable} ${inter.variable} ${nunito.variable}`}>
-      <body className="font-body bg-paper-dim text-ink antialiased">
+    <html lang="en" className={`${montserrat.variable} ${inter.variable} ${nunito.variable} scroll-smooth`}>
+      <body className=" font-body bg-paper-dim text-ink antialiased">
         <Navbar />  
         {children}
       </body>

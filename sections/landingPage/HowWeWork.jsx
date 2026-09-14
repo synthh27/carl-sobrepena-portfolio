@@ -101,13 +101,6 @@ const ProcessTimeline = () => {
         {/* End circle (faded) */}
         <circle cx="1160" cy="50" r="8" fill="none" stroke="#008080" strokeWidth="2" opacity="0.3" />
       </svg>
-
-      {/* Milestone text */}
-      <div className="text-center">
-        <span className="inline-block text-xs font-display sm:text-sm font-thin tracking-widest text-ink uppercase">
-          Our step-by-step process that guides our clients to success.
-        </span>
-      </div>
     </div>
   );
 };
@@ -182,7 +175,9 @@ const HowWeWork = () => {
 
   return (
     <>
-      <section className="py-16 sm:py-20 md:py-32 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-paper-dim from-0% via-paper-dimmer via-15% to-paper-dim to-100%">
+      <section 
+      id="how-we-work"
+      className="py-16 sm:py-20 md:py-32 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-paper-dim from-0% via-paper-dimmer via-15% to-paper-dim to-100%">
         <div className="max-w-7xl mx-auto">
           {/* Header */}
           <div className="text-center ">
@@ -197,8 +192,14 @@ const HowWeWork = () => {
           {/* Timeline */}
           <ProcessTimeline />
 
+          <div className="text-center my-8">
+            <p className="w-full text-sm md:text-lg lg:text-2xl text-ink font-display  mx-auto leading-relaxed tracking-wide">
+              Our step-by-step process that guides our clients to success.
+            </p>
+          </div>
           {/* Cards Grid */}
-          <div className="mt-12 grid grid-cols-1 xl:grid-cols-4 gap-6 sm:gap-8 lg:gap-6">
+          <div className="mt-8 grid grid-cols-1 xl:grid-cols-4 gap-6 sm:gap-8 lg:gap-6">
+            
             {processData.map((item, index) => (
               <div
                 key={item.number}
