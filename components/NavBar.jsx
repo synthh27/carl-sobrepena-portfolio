@@ -26,7 +26,7 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 font-display ${
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 font-display tracking-wide ${
         isScrolled
           ? 'bg-white/80 backdrop-blur-md border-b border-gray-200/50'
           : 'bg-transparent'
@@ -133,16 +133,16 @@ export default function Navbar() {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden bg-white/95 backdrop-blur-sm border-t border-gray-200/50 py-4 space-y-3">
+          <div className="md:hidden bg-white/95 backdrop-blur-sm border-t border-gray-200/50 p-4 space-y-3">
             <button
-              onClick={() => handleNavClick('/about')}
+              onClick={() => handleNavClick('/projects')}
               className="block w-full text-left px-4 py-2 text-sm text-paper-dim hover:text-brass-soft hover:bg-[#f1f1f1] rounded transition-colors"
             >
-              About
+              Project
             </button>
 
             {/* Mobile Dropdown */}
-            <div>
+            {/* <div>
               <button
                 onClick={() => setIsDropdownOpen(!isDropdownOpen)}
                 className="w-full text-left px-4 py-2 text-sm text-paper-dim hover:text-brass-soft hover:bg-[#f1f1f1] rounded flex items-center justify-between transition-colors"
@@ -182,21 +182,32 @@ export default function Navbar() {
                   </button>
                 </div>
               )}
-            </div>
+            </div> */}
+            
 
             <button
-              onClick={() => handleNavClick('/work')}
+              onClick={() => handleNavClick('/#services')}
               className="block w-full text-left px-4 py-2 text-sm text-paper-dim hover:text-brass-soft hover:bg-[#f1f1f1] rounded transition-colors"
             >
-              Work
+              Services
             </button>
 
             <button
-              onClick={() => handleNavClick('/contact')}
-              className="w-full mt-4 px-4 py-2 bg-brass-soft text-white text-sm font-medium rounded-lg hover:bg-brass transition-all duration-200"
+              onClick={() => handleNavClick('/#how-we-work')}
+              className="block w-full text-left px-4 py-2 text-sm text-paper-dim hover:text-brass-soft hover:bg-[#f1f1f1] rounded transition-colors"
+            >
+              How we work
+            </button>
+
+            <a
+              // onClick={() => handleNavClick('https://cal.com/carl-sobrepena-3fexby/15min')}
+              href="https://cal.com/carl-sobrepena-3fexby/15min"
+              target="_blank"
+              rel="noopener noreferrer"   
+              className="block text-center w-full mt-4 px-4 py-2 bg-brass-soft text-white text-sm font-medium rounded-sm hover:bg-brass transition-all duration-200"
             >
               Book your schedule
-            </button>
+            </a>
           </div>
         )}
       </div>

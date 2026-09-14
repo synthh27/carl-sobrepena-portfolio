@@ -22,7 +22,7 @@ const ProfileSection = () => {
                     src="/images/dp.png"
                     alt="Carl Sobrepeña" 
                     fill
-                    objectFit="cover"
+                    style={{ objectFit: 'cover' }}
                     className="rounded-3xl mx-auto"
                 />
               </div>
