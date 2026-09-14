@@ -1,5 +1,6 @@
-import { Montserrat, Fraunces, Inter, Nunito ,IBM_Plex_Mono } from "next/font/google";
+import { Montserrat, Inter, Nunito} from "next/font/google";
 import "./globals.css";
+import Navbar from "@/components/NavBar";
 
 // Display serif — used sparingly for headlines and the entry numerals
 const montserrat = Montserrat({
@@ -14,7 +15,7 @@ const montserrat = Montserrat({
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
-  weight: ["400", "500", "600"],
+  weight: ["400", "500", "600", "800"],
   display: "swap",
 });
 
@@ -23,7 +24,7 @@ const inter = Inter({
 const nunito = Nunito({
   subsets: ["latin"],
   variable: "--font-nunito",
-  weight: ["400", "500", "600"],
+  weight: ["400", "500", "600", "800"],
   display: "swap",
 });
 
@@ -31,7 +32,7 @@ const nunito = Nunito({
 // metadataBase is required for Next.js to resolve relative OG/Twitter image
 // paths into absolute URLs.
 const siteUrl = "https://your-domain.vercel.app";
-const siteName = "Your Name — Full-Stack Digital Marketing Strategist";
+const siteName = "Carl Sobrepeña — Full-Stack Digital Marketing Strategist";
 const siteDescription =
   "Full-stack digital marketing for high-value service and F&B businesses — strategy, campaigns, and systems built to grow revenue, not just traffic.";
 
@@ -90,7 +91,10 @@ export const viewport = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${montserrat.variable} ${inter.variable} ${nunito.variable}`}>
-      <body className="font-body bg-ink text-paper antialiased">{children}</body>
+      <body className="font-body bg-paper-dim text-ink antialiased">
+        <Navbar />  
+        {children}
+      </body>
     </html>
   );
 }
