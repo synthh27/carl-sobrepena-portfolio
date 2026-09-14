@@ -3,6 +3,7 @@ module.exports = {
   content: [
     "./app/**/*.{js,jsx}",
     "./components/**/*.{js,jsx}",
+    "./sections/**/*.{js,jsx}",
   ],
   theme: {
     extend: {
@@ -10,21 +11,26 @@ module.exports = {
         ink: "#F1F1F1",
         "ink-soft": "#E5E5E5",
         paper: "#14213D",
-        "paper-dim": "rgba(20, 33, 61, 0.6)",
-        brass: "#A15C00",
-        "brass-soft": "#FCA311",
+        "paper-dim": "#203563",
+        "paper-dimmer": "#3A5A8C",
+        brass: "#008080",
+        "brass-soft": "#03acac",
         wine: "#000000",
         line: "rgba(20, 33, 61, 0.14)",
       },
       fontFamily: {
-        display: ["var(--font-fraunces)", "serif"],
+        display: ["var(--font-montserrat)", "serif"],
         body: ["var(--font-inter)", "sans-serif"],
-        mono: ["var(--font-plex-mono)", "monospace"],
+        mono: ["var(--font-nunito)", "monospace"],
       },
       keyframes: {
         marquee: {
           "0%": { transform: "translateX(0)" },
           "100%": { transform: "translateX(-50%)" },
+        },
+        "marquee-reverse": {
+          "0%": { transform: "translateX(-50%)" },
+          "100%": { transform: "translateX(0)" },
         },
         "fade-up": {
           "0%": { opacity: "0", transform: "translateY(12px)" },
@@ -32,7 +38,8 @@ module.exports = {
         },
       },
       animation: {
-        marquee: "marquee 28s linear infinite",
+        marquee: "marquee 20s linear infinite",
+        "marquee-reverse": "marquee-reverse 20s linear infinite",
         "fade-up": "fade-up 0.6s ease-out forwards",
       },
     },

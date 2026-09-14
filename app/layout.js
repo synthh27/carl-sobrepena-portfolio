@@ -1,11 +1,12 @@
-import { Fraunces, Inter, IBM_Plex_Mono } from "next/font/google";
+import { Montserrat, Inter, Nunito} from "next/font/google";
 import "./globals.css";
+import Navbar from "@/components/NavBar";
 
 // Display serif — used sparingly for headlines and the entry numerals
-const fraunces = Fraunces({
+const montserrat = Montserrat({
   subsets: ["latin"],
-  variable: "--font-fraunces",
-  weight: ["400", "500", "600"],
+  variable: "--font-montserrat",
+  weight: ["400", "500", "600", "800"],
   style: ["normal", "italic"],
   display: "swap",
 });
@@ -14,15 +15,16 @@ const fraunces = Fraunces({
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
-  weight: ["400", "500", "600"],
+  weight: ["400", "500", "600", "800"],
   display: "swap",
 });
 
 // Utility / ledger labels, KPI figures, nav eyebrows
-const plexMono = IBM_Plex_Mono({
+
+const nunito = Nunito({
   subsets: ["latin"],
-  variable: "--font-plex-mono",
-  weight: ["400", "500"],
+  variable: "--font-nunito",
+  weight: ["400", "500", "600", "800"],
   display: "swap",
 });
 
@@ -30,7 +32,7 @@ const plexMono = IBM_Plex_Mono({
 // metadataBase is required for Next.js to resolve relative OG/Twitter image
 // paths into absolute URLs.
 const siteUrl = "https://your-domain.vercel.app";
-const siteName = "Your Name — Full-Stack Digital Marketing Strategist";
+const siteName = "Carl Sobrepeña — Full-Stack Digital Marketing Strategist";
 const siteDescription =
   "Full-stack digital marketing for high-value service and F&B businesses — strategy, campaigns, and systems built to grow revenue, not just traffic.";
 
@@ -48,8 +50,8 @@ export const metadata = {
     "service business marketing",
     "growth marketing",
   ],
-  authors: [{ name: "Your Name" }],
-  creator: "Your Name",
+  authors: [{ name: "Carl Sobrepeña" }],
+  creator: "Carl Sobrepeña",
   robots: {
     index: true,
     follow: true,
@@ -88,8 +90,11 @@ export const viewport = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${fraunces.variable} ${inter.variable} ${plexMono.variable}`}>
-      <body className="font-body bg-ink text-paper antialiased">{children}</body>
+    <html lang="en" className={`${montserrat.variable} ${inter.variable} ${nunito.variable} scroll-smooth`}>
+      <body className=" font-body bg-paper-dim text-ink antialiased">
+        <Navbar />  
+        {children}
+      </body>
     </html>
   );
 }
