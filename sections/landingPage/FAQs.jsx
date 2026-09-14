@@ -34,12 +34,12 @@ const faqData = [
     question: "Do I need existing traffic to start?",
     answer: "No. If you don't have traffic yet, we build the foundation—the funnel, email sequences, and conversion systems—so they're ready the moment traffic arrives. This prevents the costly mistake of scaling broken funnels."
   },
-  {
-    id: 6,
-    // icon: Target,
-    question: "Can you handle service businesses and e-commerce?",
-    answer: "We specialize in service businesses and F&B, but our funnel and automation expertise applies to any high-ticket or repeat-purchase model. E-commerce with average order values under $50 typically doesn't justify the investment in our full-stack approach."
-  }
+  // {
+  //   id: 6,
+  //   // icon: Target,
+  //   question: "Can you handle service businesses and e-commerce?",
+  //   answer: "We specialize in service businesses and F&B, but our funnel and automation expertise applies to any high-ticket or repeat-purchase model. E-commerce with average order values under $50 typically doesn't justify the investment in our full-stack approach."
+  // }
 ];
 
 const FAQItem = ({ item, isOpen, onToggle }) => {

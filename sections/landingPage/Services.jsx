@@ -24,28 +24,28 @@ const Services = () => {
     const featureCards = [
       {
         icon: <PenTool className="size-8 text-ink" />,
-        title: "Brand Identity Design",
-        description: "Map exactly where prospects abandon. Stop guessing. Start fixing the leaks that kill conversions."
+        title: "Visual Brand Identity Design",
+        description: "Your business looks generic. We design a distinctive visual identity that commands attention and signals premium."
       },
       {
         icon: <Zap className="size-8 text-ink" />,
         title: "Funnel & Landing Page Design",
-        description: "Map exactly where prospects abandon. Stop guessing. Start fixing the leaks that kill conversions."
+        description: "Prospects land and bounce before you pitch. We design funnels that eliminate friction and convert."
       },
       {
         icon: <Mail className="size-8 text-ink" />,
         title: "Email Campaigns Sequence",
-        description: "Every step designed to move prospects forward. No confusion. No delays. No reasons to hesitate."
+        description: "Emails get ignored without constant work. We build sequences that nurture automatically and convert."
       },
       {
         icon: <MessageCircle className="size-8 text-ink" />,
         title: "Chat Automation Setup",
-        description: "Nurture and convert 24/7 without manual work. Your funnel keeps working while you sleep."
+        description: "You're answering the same questions endlessly and losing leads. We deploy chatbots that qualify 24/7."
       },
       {
         icon: <Workflow className="size-8 text-ink" />,
         title: "CRM Setup & Workflows",
-        description: "Stop the scroll. Make them care. Messaging that cuts through noise and compels action."
+        description: "Your data is scattered and you're losing opportunities. We centralize everything and keep deals moving."
       }
     ];
     useEffect(() => {
