@@ -34,9 +34,9 @@ const ProfileSection = () => {
                 Carl<span className="md:block text-3xl text-ink md:text-4xl lg:text-6xl font-semibold "> Sobrepeña</span>
               </h1>
               <p className="my-2max-w-full md:max-w-3xl lg:max-w-5xl tracking-normal leading-relaxed font-display text-ink text-sm md:text-sm lg:text-lg">
-                It takes the right <span className="font-semibold px-2 rounded-sm bg-paper text-brass-soft">sales psychology-infused strategies.</span> to turn customer's interest into checked out sales. 
+                It takes the right <span className="font-semibold px-1 rounded-sm bg-paper text-brass-soft">sales psychology-infused strategies</span> to turn customer's interest into checked out sales. 
                 <span className='x'> </span>
-                Whether you're just starting or scaling, as a <span className="font-semibold px-1 rounded-sm bg-paper text-brass-soft">full-stack digital marketing strategist,</span>  I help business owners and entrepreneurs like you, establish stronger brand identities and seamless marketing pipelines by implementing 
+                Whether you're just starting or scaling, as a <span className="font-semibold px-1 rounded-sm bg-paper text-brass-soft">full-stack digital marketing strategist,</span>  I help business owners and entrepreneurs, like you, establish stronger brand identities and seamless marketing pipelines.
               </p>
 
               <div className="w-full flex flex-col items-center justify-center text-center gap-4 pt-6">

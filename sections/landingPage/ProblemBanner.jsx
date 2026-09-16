@@ -93,10 +93,10 @@ const FeatureCard = ({ icon, title, description }) => (
         <div className="relative z-10 w-full ">
             <div className="flex flex-col gap-4 max-w-7xl mx-auto font-bold text-body text-center leading-relaxed">
                 <h2 className="font-display font-bold text-2xl lg:text-3xl uppercase text-paper-dimmer tracking-wider">
-                People's attention span today are <br/> <span className="inline-block text-brass-soft py-2 lg:py-4 text-4xl lg:text-7xl">shorter than ever.</span>
+                People's attention span today is <br/> <span className="inline-block text-brass-soft py-2 lg:py-4 text-4xl lg:text-7xl">shorter than ever.</span>
                 </h2>
                 <p className="mx-auto lg:mb-6 max-w-3xl md:max-w-xl lg:max-w-4xl font-normal tracking-wide text-paper-dimmer text-md md:text-lg lg:text-2xl">
-                    Interest alone won't convert. It takes the <span className='bg-paper-dim px-2 text-brass-soft rounded-md'>best strategies</span> to turn keep your customer's journey rolling from strangers to actual checked out sales.
+                    Interest alone won't convert. It takes the <span className='bg-paper-dim px-2 text-brass-soft rounded-md'>best strategies</span> to keep your customer's journey rolling from strangers to actual checkout sales.
                 </p>
                 {/* Feature Cards Section */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 max-w-6xl mt-8 mx-auto text-left">
