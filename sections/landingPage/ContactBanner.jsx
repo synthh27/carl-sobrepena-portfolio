@@ -71,7 +71,7 @@ const ContactBanner = () => {
                 </p>
                 <div className="w-full max-w-3xl mx-auto flex flex-col md:flex-row items-center justify-center text-center gap-4 mt-6">
                     <a
-                        href="https://cal.com/carl-sobrepena-3fexby/15min"
+                        href="https://api.leadconnectorhq.com/widget/booking/aKlI25FVdSB34NKfTFed"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="w-full rounded-md bg-paper-dimmer px-8 lg:px-8 py-3 font-display text-sm lg:text-sm font-semibold uppercase tracking-wide text-ink-dim transition-colors  hover:bg-paper-dimmer/90 hover:border-paper-dimmer border-2  hover:shadow-md border-paper-dimmer"

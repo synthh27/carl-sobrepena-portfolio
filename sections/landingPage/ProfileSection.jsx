@@ -41,7 +41,7 @@ const ProfileSection = () => {
 
               <div className="w-full flex flex-col items-center justify-center text-center gap-4 pt-6">
                 <a
-                  href="https://cal.com/carl-sobrepena-3fexby/15min"
+                  href="https://api.leadconnectorhq.com/widget/booking/aKlI25FVdSB34NKfTFed"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full rounded-md bg-brass-soft px-8 lg:px-8 py-3 font-display text-xs font-semibold lg:text-md uppercase tracking-wide text-ink-dim transition-colors hover:bg-brass-soft/80 border-2 border-brass-soft hover:shadow-md "

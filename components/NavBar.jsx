@@ -109,7 +109,7 @@ export default function Navbar() {
 
             {/* CTA Button */}
             <button
-              onClick={() => handleNavClick('https://cal.com/carl-sobrepena-3fexby/15min')}
+              onClick={() => handleNavClick('https://api.leadconnectorhq.com/widget/booking/aKlI25FVdSB34NKfTFed')}
               className="ml-4 px-6 py-2 bg-brass-soft text-white text-sm font-medium rounded-sm hover:bg-brass transition-all duration-200 active:scale-95"
             >
               Book your schedule
@@ -200,8 +200,8 @@ export default function Navbar() {
             </button>
 
             <a
-              // onClick={() => handleNavClick('https://cal.com/carl-sobrepena-3fexby/15min')}
-              href="https://cal.com/carl-sobrepena-3fexby/15min"
+              // onClick={() => handleNavClick('https://api.leadconnectorhq.com/widget/booking/aKlI25FVdSB34NKfTFed')}
+              href="https://api.leadconnectorhq.com/widget/booking/aKlI25FVdSB34NKfTFed"
               target="_blank"
               rel="noopener noreferrer"   
               className="block text-center w-full mt-4 px-4 py-2 bg-brass-soft text-white text-sm font-medium rounded-sm hover:bg-brass transition-all duration-200"

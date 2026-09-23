@@ -57,7 +57,7 @@ export default function Hero() {
         </p>
         <div className="w-full flex flex-col sm:flex-row items-center justify-center gap-4 pt-6">
           <a
-            href="https://cal.com/carl-sobrepena-3fexby/15min"
+            href="https://api.leadconnectorhq.com/widget/booking/aKlI25FVdSB34NKfTFed"
             target="_blank"
             rel="noopener noreferrer"
             className="w-full sm:w-fit rounded-md bg-brass-soft px-8 py-3 font-mono text-xs font-semibold md:text-md uppercase tracking-[0.15em] text-ink-dim transition-colors hover:bg-brass-soft/80 hover:shadow-xl border-2 border-brass-soft "
