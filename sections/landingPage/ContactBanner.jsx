@@ -80,7 +80,7 @@ const ContactBanner = () => {
                         <span className='block text-xs lg:text-[.65rem] text-ink-dim font-thin'>100% free 15 min call. Zero Commitment.</span>
                     </a>
                     <a
-                    href="#projects"
+                    href="#services"
                     className="w-full font-display font-semibold rounded-md text-sm lg:text-md uppercase tracking-wide border-paper-dimmer px-8 py-3 text-paper-dimmer transition-colors duration-300 hover:text-paper-dimmer/80 hover:border-paper-dimmer/70 border-2 hover:shadow-md "
                     >
                     Check our work process
